@@ -8,9 +8,8 @@ const app = express();
 app.use(express.json());
 app.use(cors()); // Enable CORS for all routes
 
-// Use the API key from the .env file
-const apiKey = process.env.API_KEY; // This will load the key from your .env file
-
+// Define your API key here
+const apiKey = '11497f3e784d662c8d36c031adc2879b'; // Replace with your actual API key
 
 // Function to determine clothing suggestion based on temperature
 function getClothingSuggestion(temperature) {
